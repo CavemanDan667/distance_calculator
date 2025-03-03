@@ -2,13 +2,11 @@ import streamlit as st
 import pandas as pd
 import requests
 import time
-import io
 
 st.title("Driving Distance Calculator with Google Routes API")
 
 API_KEY = st.text_input("Enter your Google API Key", type="password")
 API_COST_PER_REQUEST = 0.005  # USD
-FREE_TIER_VALUE = 200  # USD free tier per month
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # seconds
 
